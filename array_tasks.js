@@ -40,12 +40,25 @@ var arrayTasks = {
 	},
 
 	// findDuplicates: function (arr) {
-		
+	// 	var tempArray = [];
+	// 	var sortedArray = arr.slice().sort();
+	// 	for (var i = 0; i < arr.length; i++) {
+	// 		var count = 0;
+	// 		if (sortedArray[i+1] === sortedArray[i]) {
+				
+	// 			tempArray.push(sortedArray[i]);
+	// 		}
+	// 	}
+	// 	return tempArray;
 	// },
 
-	// removeAndClone: function (arr, valueToRemove) {
-		
-	// },
+	removeAndClone: function (arr, valueToRemove) {
+		var tempArray = [];
+		for (var item of arr) {
+			if (item !== valueToRemove) tempArray.push(item);
+		}
+		return tempArray;
+	},
 
 	// findIndexesOf: function (arr, itemToFind) {
 		

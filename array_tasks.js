@@ -11,9 +11,17 @@ var arrayTasks = {
 		return tempArray;
 	},
 
-	// insertAt: function (arr, itemToAdd, index) {
-		
-	// },
+	insertAt: function (arr, itemToAdd, index) {
+		var tempArray = [];
+		for (var i = index; i < arr.length; i++) {
+			tempArray.push(arr[i]);
+		}
+		arr[index] = itemToAdd;
+		for (var item of tempArray) {
+			arr.push(item);
+		}
+		return arr;
+	},
 
 	// square: function (arr) {
 		

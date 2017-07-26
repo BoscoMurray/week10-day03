@@ -39,18 +39,16 @@ var arrayTasks = {
 		return total;
 	},
 
-	// findDuplicates: function (arr) {
-	// 	var tempArray = [];
-	// 	var sortedArray = arr.slice().sort();
-	// 	for (var i = 0; i < arr.length; i++) {
-	// 		var count = 0;
-	// 		if (sortedArray[i+1] === sortedArray[i]) {
-				
-	// 			tempArray.push(sortedArray[i]);
-	// 		}
-	// 	}
-	// 	return tempArray;
-	// },
+	findDuplicates: function (arr) {
+		var tempArray = [];
+		for (var i = 0; i < arr.length; i++) {
+			if (arr.lastIndexOf(arr[i]) !== i &&
+				tempArray.lastIndexOf(arr[i]) === -1)  {
+					tempArray.push(arr[i]);
+				}
+		}
+		return tempArray;
+	},
 
 	removeAndClone: function (arr, valueToRemove) {
 		var tempArray = [];

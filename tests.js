@@ -20,10 +20,10 @@ describe('Array tasks', function () {
 		assert.deepEqual(arrayTasks.square(arr), [1, 4, 9, 16, 25])
 	})
 
-	// it('should calculate the sum of all values in an array', function () {
-	// 	var arr = [1, 2, 3, 4, 5]
-	// 	assert.equal(15, arrayTasks.sum(arr))
-	// })
+	it('should calculate the sum of all values in an array', function () {
+		var arr = [1, 2, 3, 4, 5]
+		assert.equal(arrayTasks.sum(arr), 15)
+	})
 
 	// it('should find duplicate values in an array, returning a new array of the duplicates', function () {
 	// 	var arr = [1, 2, 3, 4, 4, 5, 5, 5]

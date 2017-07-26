@@ -31,9 +31,13 @@ var arrayTasks = {
 		return tempArray;
 	},
 
-	// sum: function (arr) {
-		
-	// },
+	sum: function (arr) {
+		var total = 0;
+		for (var item of arr) {
+			total += item;
+		}
+		return total;
+	},
 
 	// findDuplicates: function (arr) {
 		

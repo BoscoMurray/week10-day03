@@ -23,9 +23,13 @@ var arrayTasks = {
 		return arr;
 	},
 
-	// square: function (arr) {
-		
-	// },
+	square: function (arr) {
+		var tempArray = [];
+		for (var item of arr) {
+			tempArray.push(item * item);
+		}
+		return tempArray;
+	},
 
 	// sum: function (arr) {
 		
